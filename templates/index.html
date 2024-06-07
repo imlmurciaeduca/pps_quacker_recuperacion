@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Quacker</title>
+    </head>
+    <body>
+        <p style="text-align:left;"><img src="{{imagen}}" alt="Quacker" height="100"></p>
+        <style type="text/css">
+            td {
+                padding:0 30px 0 30px;
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+            table {
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+        </style>
+        <table>
+            <tr>
+                <th>Quack</th>
+                <th>Requacks</th>
+                <th>Favs</th>
+                <th>Author</th>
+                <th>Quack Time</th>
+            </tr>
+            {% for quack in quacks %}
+            <tr>
+                <td>{{quack.text}}</td>
+                <td>{{quack.requacked_by.__len__()}}</td>
+                <td>{{quack.favs}}</td>
+                <td>{{quack.author}}</td>
+                <td>{{quack.creation_timestamp.strftime("%d-%m-%Y, %H:%M:%S")}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
