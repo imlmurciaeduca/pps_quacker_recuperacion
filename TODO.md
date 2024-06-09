@@ -13,7 +13,7 @@ Completa esta lista para llevar a Quacker al nivel que se merece
 - [ ] Versión con Docker-Compose (¡usando volúmenes! Los Quacks son las píldoras de información más valiosas de Internet)
 
 ### En progreso
-- [ ] DAO para conectar con Mongo
+- [ ] DAO para conectar con Mongo. __Nota:__ *esto ya está, pero falta decidir cómo definimos el paso de la URI de conexión*
 
 ### Hecho ✓
 - [x] Crear la mejor red social del mundo para compartir noticias e ideas
